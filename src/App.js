@@ -1,7 +1,7 @@
 import React from 'react';
 import CountdownTimer from './CountdownTimer';
 
-import './App.css';
+import './App.scss';
 
 export default function App() {
 	const NOW_IN_MS = new Date().getTime();
