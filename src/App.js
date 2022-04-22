@@ -4,16 +4,13 @@ import CountdownTimer from './CountdownTimer';
 import './App.scss';
 
 export default function App() {
-	const NOW_IN_MS = new Date().getTime();
-	const TARGET_DATE_IN_MS = 31 * 24 * 60 * 60 * 1000;
-
-	const dateTimeAfterTargetDate = NOW_IN_MS + TARGET_DATE_IN_MS;
+	const TARGET_DATE_IN_MS = new Date('May 22, 2022 12:00:00').getTime();
 
 	return (
 		<div className="main-container">
 			<div className="inner-container">
 				<h1>Playa Del Carmen Trip</h1>
-				<CountdownTimer targetDate={dateTimeAfterTargetDate} />
+				<CountdownTimer targetDate={TARGET_DATE_IN_MS} />
 			</div>
 		</div>
 	);
