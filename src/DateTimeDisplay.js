@@ -3,8 +3,8 @@ import React from 'react';
 const DateTimeDisplay = ({ value, type }) => {
 	return (
 		<div className="date-time-container">
-			<p>{value}</p>
-			<p>{type}</p>
+			<p className="value">{value}</p>
+			<span className="label">{type}</span>
 		</div>
 	);
 };

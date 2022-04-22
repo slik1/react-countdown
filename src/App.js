@@ -10,8 +10,11 @@ export default function App() {
 	const dateTimeAfterTargetDate = NOW_IN_MS + TARGET_DATE_IN_MS;
 
 	return (
-		<div>
-			<CountdownTimer targetDate={dateTimeAfterTargetDate} />
+		<div className="main-container">
+			<div className="inner-container">
+				<h1>Playa Del Carmen Trip</h1>
+				<CountdownTimer targetDate={dateTimeAfterTargetDate} />
+			</div>
 		</div>
 	);
 }
